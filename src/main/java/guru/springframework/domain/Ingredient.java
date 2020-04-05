@@ -1,7 +1,9 @@
 package guru.springframework.domain;
 
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.math.BigDecimal;
+import java.util.Optional;
 
 @Entity
 public class Ingredient {
@@ -18,6 +20,24 @@ public class Ingredient {
 
     @OneToOne
     private UnitOfMeasure uom;
+
+    public Ingredient(){
+
+    }
+
+    public Ingredient(String description, BigDecimal amount, UnitOfMeasure uom) {
+        this.description = description;
+        this.amount = amount;
+        this.uom = uom;
+        this.recipe = recipe;
+    }
+
+    public Ingredient(String description, BigDecimal amount, UnitOfMeasure uom, Recipe recipe) {
+        this.description = description;
+        this.amount = amount;
+        this.uom = uom;
+        this.recipe = recipe;
+    }
 
     public UnitOfMeasure getUom() {
         return uom;
