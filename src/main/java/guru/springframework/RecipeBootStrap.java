@@ -42,6 +42,7 @@ public class RecipeBootStrap implements ApplicationListener<ContextRefreshedEven
         Recipe guacamole = new Recipe();
         guacamole.setDescription("Perfect Guacamole");
         guacamole.setPrepTime(10);
+        guacamole.setCookTime(15);
         guacamole.setDirections("1 Cut avocado, remove flesh: Cut the avocados in half. Remove seed. Score the inside of the avocado with a blunt knife and scoop out the flesh with a spoon\" +\n" +
                 "                \"\\n\" +\n" +
                 "                \"2 Mash with a fork: Using a fork, roughly mash the avocado. (Don't overdo it! The guacamole should be a little chunky.)\" +\n" +
