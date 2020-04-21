@@ -97,7 +97,7 @@
                                     <li th:each="ingredient : ${recipe.ingredients}"
                                         th:text="${(ingredient.amount +
                                         ' ' + ingredient.uom.uom +
-                                        ' - ' + ingredient.description)}">1 Teaspoon of Sugar
+                                        ' - ' + ingredient.getDescription())}">1 Teaspoon of Sugar
                                     </li>
                                 </ul>
                             </div>

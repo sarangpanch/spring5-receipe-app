@@ -30,7 +30,7 @@ class RecipeControllerTest {
         Recipe recipe = new Recipe();
         recipe.setId(1L);
 
-        when(recipeService.getRecipeById(1L)).thenReturn(recipe);
+        when(recipeService.findById(1L)).thenReturn(recipe);
 
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
 
