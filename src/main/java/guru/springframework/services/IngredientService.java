@@ -1,10 +1,8 @@
 package guru.springframework.services;
 
-import guru.springframework.domain.Ingredient;
-
-import java.util.Set;
+import guru.springframework.commands.IngredientCommand;
 
 public interface IngredientService {
 
-    Set<Ingredient> findByRecipeId(Long recipeId);
+    IngredientCommand findByRecipeIdByIngredientId(Long recipeId, Long ingredientId);
 }
